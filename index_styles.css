@@ -1,3 +1,28 @@
 #welcome{
 	font-weight: bold;
 }
+.flex-menu {
+	display: flex;
+	background-color: white;
+	justify-content: space-between;
+	align-items: center;
+	float: top;
+	height: 30px;
+}
+.flex-menu > div {
+	text-align: center;
+	color: white;
+	background-color: orange;
+	font-size: 25px;
+	flex-grow: 1;
+	padding: 10px;
+	border: 2px solid white;
+	width: 25%;
+	transition: transform .2s;
+}
+.flex-menu > div:hover {
+	background-color: red;
+	color: white;
+	transform: scale(1.05);
+	cursor: pointer;
+}
