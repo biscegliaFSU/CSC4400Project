@@ -3,9 +3,6 @@
 	color: white;
 	text-align: center;
 }
-body {
-	background-image: radial-gradient(circle, red, darkred);
-}
 .flex-menu {
 	display: flex;
 	background-color: white;
