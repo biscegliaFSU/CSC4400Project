@@ -1,5 +1,10 @@
 #welcome{
 	font-weight: bold;
+	color: white;
+	text-align: center;
+}
+body {
+	background-image: radial-gradient(circle, red, darkred);
 }
 .flex-menu {
 	display: flex;
@@ -25,4 +30,31 @@
 	color: white;
 	transform: scale(1.05);
 	cursor: pointer;
+}
+.flex-container {
+  display: flex;
+	flex-flow: row wrap;
+}
+.flex-container > div {
+  background-color: white;
+  color: black;
+  width: 23%;
+  margin: 10px;
+  text-align: center;
+  line-height: 100px;
+}
+.menu-item-name {
+	font-size: 150%;
+	text-align: center;
+}
+.menu-item-price {
+	font-size: 140%;
+	text-align: center;
+	line-height: 15px;
+}
+#center-button {
+	background-image: linear-gradient(red, orange);
+	color: white;
+	font-weight: bold;
+	font-size: 35px;
 }
