@@ -4,7 +4,7 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
+    <title>Homepage</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 	<link href="index_styles.css" rel="stylesheet">
@@ -33,22 +33,27 @@
   <div class="flex-menu">
 	<!-- Using <a> makes only the text clickable and not the entire <div> box, so onclick is used instead -->
 	  <div onclick="location.href='index.html';">❰ About ❱</div>
-	  <div onclick="location.href='index.html';">❰ Contact ❱</div>
+    <div onclick="location.href='index.html';">❰ Contact ❱</div>
     <div onclick="location.href='index.html';" style="background-color:red">❱ Home ❰</div>
-	  <div onclick="location.href='index.html';">❰ Language ❱</div>
-    <div onclick="location.href='index.html';">❰ Login ❱</div>
+    <div onclick="location.href='index.html';">❰ Language ❱</div>
+    <div onclick="location.href='back_end_home.html';">❰ Login ❱</div>
   </div>
   </head>
   <body class="container my-5">
-  <br>
-	<div class="mx-auto" style="width: 600px;">
-		<h1 id="welcome">Welcome to Quick-Serve.</h1>
+  <br><br><br><br>
+  <h1 id="welcome">Welcome to Quick-Serve</h1>
+  <br><br><br>
+  <div align="center">
+    <button type="button" class="btn-lg" id="center-button" onclick="location.href='store_front.html';" style="width: 300px; height: 100px;">Start Order</button>
+  </div>
+	<!-- <div class="mx-auto" style="width: 600px;">
+    <br><br><br>
 		<div class="mx-auto" style="width: 100px;">
 			<a href="store_front.html">
-				<button type="button" class="btn btn-primary btn-lg" onclick="window.location.href='store_front.html'" style="width: 200px; height: 100px;">Start Order</button>
+				<button type="button" class="btn btn-primary  btn-lg" onclick="window.location.href='store_front.html" style="width: 200px; height: 100px;">Start Order</button>
 			</a>
 		</div>
-	</div>
+	</div> -->
 
 
 	<!--<input type="button" value="Start Order!" id="start_btn"></input> -->
