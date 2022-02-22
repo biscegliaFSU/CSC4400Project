@@ -1,0 +1,83 @@
+#welcome{
+	font-weight: bold;
+	color: white;
+	text-align: center;
+}
+.flex-menu {
+	display: flex;
+	background-color: white;
+	justify-content: space-between;
+	align-items: center;
+	float: top;
+	height: 30px;
+}
+.flex-menu > div {
+	text-align: center;
+	color: white;
+	background-color: orange;
+	font-size: 25px;
+	flex-grow: 1;
+	padding: 10px;
+	border: 2px solid white;
+	width: 25%;
+	transition: transform .2s;
+}
+.flex-menu > div:hover {
+	background-color: red;
+	color: white;
+	transform: scale(1.05);
+	cursor: pointer;
+}
+.flex-container {
+  display: flex;
+	flex-flow: row wrap;
+}
+.flex-container > div {
+  background-color: white;
+  color: black;
+  width: 23%;
+  margin: 10px;
+  text-align: center;
+  line-height: 100px;
+}
+.menu-item-name {
+	font-size: 150%;
+	text-align: center;
+}
+.menu-item-price {
+	font-size: 140%;
+	text-align: center;
+	line-height: 15px;
+}
+#center-button {
+	background-image: linear-gradient(red, orange);
+	color: white;
+	font-weight: bold;
+	font-size: 35px;
+}
+.about-text-container {
+	color: white;
+	width: 50%;
+	float: left;
+}
+.about-text-box {
+	margin-right: 2%;
+	margin-bottom: 1%;
+	background-color: #ed8600;
+	border-radius: 25px;
+	padding: 2%;
+}
+.about-text-box p {
+	font-size: 17px;
+}
+.embedded-google-map{
+    width: 48%;
+    float: left;
+}
+.embedded-google-map iframe{
+   width:100%;
+	 border-radius:25px;
+}
+.clearfix{
+    clear:both
+}
