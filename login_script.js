@@ -5,10 +5,10 @@ btn.addEventListener("click", function(){
 	var pass = document.getElementById("pass").value;
 	if(name === "Marcos" && pass === "xyz123")
 	{
-		location.href = "manager_page.html";
+		location.href = "employee_page.html";
 	}
 	if(name === "Aaron" && pass === "abc789")
 	{
-		location.href = "employee_page.html";
+		location.href = "manager_page.html";
 	}
 });
