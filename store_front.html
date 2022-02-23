@@ -6,86 +6,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Menu</title>
     <style>
-      body {background-image:radial-gradient(circle, red, darkred);}
+      body {
+        background-image:radial-gradient(circle, red, darkred);
+      }
+      #floating-menu {
+        width: 85%;
+        z-index: 100;
+        position: fixed;
+      }
+      #floating-menu a, #floating-menu h3 {
+        font-size: 0.9em;
+        display: block;
+        margin: 0 0.5em;
+        color: white;
+      }
     </style>
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-	<link href="index_styles.css" rel="stylesheet">
-  <div class="flex-menu">
+	<link href="frontend-styles.css" rel="stylesheet">
+  <div class="flex-menu" id="floating-menu">
 	<!-- Using <a> makes only the text clickable and not the entire <div> box, so onclick is used instead -->
-	  <div onclick="location.href='index.html';">❰ About ❱</div>
+	  <div onclick="location.href='about.html';">❰ About ❱</div>
     <div onclick="location.href='index.html';">❰ Contact ❱</div>
     <div onclick="location.href='index.html';">❰ Home ❱</div>
     <div onclick="location.href='index.html';">❰ Language ❱</div>
-    <div onclick="location.href='index.html';" style="background-color:black">Proceed to Cart 🛒</div>
+    <div onclick="location.href='index.html';" style="background-color:#4f0000">Go to Cart 🛒</div>
   </div>
   </head>
   <body class="container my-5">
     <br><br><br>
     <div class="flex-container">
       <div>
-        <img src="Image not found.png" alt="Placeholder" width="80%" height="50%" style="margin-top:5%">
-        <p class="menu-item-name">Menu item #1</p>
-        <p class="menu-item-price">$9.99</p>
+        <img src="Pizza image 612x612.jpg" alt="Placeholder" width="80%" height="50%" style="margin-top:5%">
+        <p class="menu-item-name">Menu item #1 | $9.99</p>
+        <p class="menu-item-desc">This is the description for menu item #1, describe the menu item here.</p>
         <!-- <input type="number" id="Q1" name="quantity" min="0" max="5"> -->
       </div>
       <div>
-        <img src="Image not found.png" alt="Placeholder" width="80%" height="50%" style="margin-top:5%">
-        <p class="menu-item-name">Menu item #2</p>
-        <p class="menu-item-price">$9.99</p>
+        <img src="Pizza image 612x612.jpg" alt="Placeholder" width="80%" height="50%" style="margin-top:5%">
+        <p class="menu-item-name">Menu item #2 | $9.99</p>
+        <p class="menu-item-desc">This is the description for menu item #2, describe the menu item here.</p>
       </div>
       <div>
-        <img src="Image not found.png" alt="Placeholder" width="80%" height="50%" style="margin-top:5%">
-        <p class="menu-item-name">Menu item #3</p>
-        <p class="menu-item-price">$9.99</p>
+        <img src="Pizza image 612x612.jpg" alt="Placeholder" width="80%" height="50%" style="margin-top:5%">
+        <p class="menu-item-name">Menu item #3 | $9.99</p>
+        <p class="menu-item-desc">This is the description for menu item #3, describe the menu item here.</p>
       </div>
       <div>
-        <img src="Image not found.png" alt="Placeholder" width="80%" height="50%" style="margin-top:5%">
-        <p class="menu-item-name">Menu item #4</p>
-        <p class="menu-item-price">$9.99</p>
+        <img src="Pizza image 612x612.jpg" alt="Placeholder" width="80%" height="50%" style="margin-top:5%">
+        <p class="menu-item-name">Menu item #4 | $9.99</p>
+        <p class="menu-item-desc">This is the description for menu item #4, describe the menu item here.</p>
       </div>
       <div>
-        <img src="Image not found.png" alt="Placeholder" width="80%" height="50%" style="margin-top:5%">
-        <p class="menu-item-name">Menu item #5</p>
-        <p class="menu-item-price">$9.99</p>
+        <img src="Pizza image 612x612.jpg" alt="Placeholder" width="80%" height="50%" style="margin-top:5%">
+        <p class="menu-item-name">Menu item #5 | $9.99</p>
+        <p class="menu-item-desc">This is the description for menu item #5, describe the menu item here.</p>
       </div>
       <div>
-        <img src="Image not found.png" alt="Placeholder" width="80%" height="50%" style="margin-top:5%">
-        <p class="menu-item-name">Menu item #6</p>
-        <p class="menu-item-price">$9.99</p>
+        <img src="Pizza image 612x612.jpg" alt="Placeholder" width="80%" height="50%" style="margin-top:5%">
+        <p class="menu-item-name">Menu item #6 | $9.99</p>
+        <p class="menu-item-desc">This is the description for menu item #6, describe the menu item here.</p>
       </div>
       <div>
-        <img src="Image not found.png" alt="Placeholder" width="80%" height="50%" style="margin-top:5%">
-        <p class="menu-item-name">Menu item #7</p>
-        <p class="menu-item-price">$9.99</p>
+        <img src="Pizza image 612x612.jpg" alt="Placeholder" width="80%" height="50%" style="margin-top:5%">
+        <p class="menu-item-name">Menu item #7 | $9.99</p>
+        <p class="menu-item-desc">This is the description for menu item #7, describe the menu item here.</p>
       </div>
       <div>
-        <img src="Image not found.png" alt="Placeholder" width="80%" height="50%" style="margin-top:5%">
-        <p class="menu-item-name">Menu item #8</p>
-        <p class="menu-item-price">$9.99</p>
+        <img src="Pizza image 612x612.jpg" alt="Placeholder" width="80%" height="50%" style="margin-top:5%">
+        <p class="menu-item-name">Menu item #8 | $9.99</p>
+        <p class="menu-item-desc">This is the description for menu item #8, describe the menu item here.</p>
       </div>
       <div>
-        <img src="Image not found.png" alt="Placeholder" width="80%" height="50%" style="margin-top:5%">
-        <p class="menu-item-name">Menu item #9</p>
-        <p class="menu-item-price">$9.99</p>
+        <img src="Pizza image 612x612.jpg" alt="Placeholder" width="80%" height="50%" style="margin-top:5%">
+        <p class="menu-item-name">Menu item #9 | $9.99</p>
+        <p class="menu-item-desc">This is the description for menu item #9, describe the menu item here.</p>
       </div>
       <div>
-        <img src="Image not found.png" alt="Placeholder" width="80%" height="50%" style="margin-top:5%">
-        <p class="menu-item-name">Menu item #10</p>
-        <p class="menu-item-price">$9.99</p>
+        <img src="Pizza image 612x612.jpg" alt="Placeholder" width="80%" height="50%" style="margin-top:5%">
+        <p class="menu-item-name">Menu item #10 | $9.99</p>
+        <p class="menu-item-desc">This is the description for menu item #10, describe the menu item here.</p>
       </div>
       <div>
-        <img src="Image not found.png" alt="Placeholder" width="80%" height="50%" style="margin-top:5%">
-        <p class="menu-item-name">Menu item #11</p>
-        <p class="menu-item-price">$9.99</p>
+        <img src="Pizza image 612x612.jpg" alt="Placeholder" width="80%" height="50%" style="margin-top:5%">
+        <p class="menu-item-name">Menu item #11 | $9.99</p>
+        <p class="menu-item-desc">This is the description for menu item #11, describe the menu item here.</p>
       </div>
       <div>
-        <img src="Image not found.png" alt="Placeholder" width="80%" height="50%" style="margin-top:5%">
-        <p class="menu-item-name">Menu item #12</p>
-        <p class="menu-item-price">$9.99</p>
+        <img src="Pizza image 612x612.jpg" alt="Placeholder" width="80%" height="50%" style="margin-top:5%">
+        <p class="menu-item-name">Menu item #12 | $9.99</p>
+        <p class="menu-item-desc">This is the description for menu item #12, describe the menu item here.</p>
       </div>
     </div>
+    <iframe src="https://calendar.google.com/calendar/embed?height=600&wkst=1&bgcolor=%23ffffff&ctz=America%2FNew_York&src=bmJpc2NlZzFAc3R1ZGVudC5maXRjaGJ1cmdzdGF0ZS5lZHU&src=YWRkcmVzc2Jvb2sjY29udGFjdHNAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=MmQ2N2ppaGZkOHFzYzY1Z3U5aTRxb3IwdjhAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&src=ZW4udXNhI2hvbGlkYXlAZ3JvdXAudi5jYWxlbmRhci5nb29nbGUuY29t&src=aDh0Y2M3bWU0amRvNjczOWx2NWV1YXZxdWNAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ&color=%2333B679&color=%238E24AA&color=%23616161&color=%233F51B5&color=%233F51B5" style="border:solid 1px #777" width="100%" height="600" frameborder="0" scrolling="no"></iframe>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
