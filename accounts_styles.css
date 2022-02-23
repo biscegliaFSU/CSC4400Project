@@ -1,0 +1,150 @@
+body{
+	margin: 0px;
+	background-color: rgb(214, 118, 31);
+}
+
+#stats_field{
+	display: flex;
+	flex: nowrap;
+	flex-direction: row;
+	justify-content: space-evenly;
+	height: 800px;
+	width: 80%;
+	margin-left: 0px;
+	text-align: center;
+	background-color: rgb(240, 178, 122);
+}
+
+#actions_field{
+	height: 800px;
+	width: 20%;
+	border-style: none none none solid;
+	border-width: 2px;
+	border-color: black;
+	padding-left: 20px;
+}
+
+#container{
+	display: flex;
+	flex: nowrap;
+	flex-direction: column;
+	background-color: rgb(240, 178, 122); 
+}
+
+.btn_container{
+	display: flex;
+	flex: nowrap;
+	flex-direction: column;
+	padding: 20px;
+}
+
+.btn_container input[type=button]{
+	font-family: helvetica;
+	font-size: 11px;
+	border: none;
+	border-radius: 5px;
+	height: 40px;
+	width: 80%;
+}
+
+.btn_container input[type=button]:hover{
+	background-color:  rgb(240, 178, 122);
+}
+.btn_container input[type=button]:active{
+	background-color:  rgb(210, 178, 122);
+}
+
+#subtext{
+	font-family: helvetica;
+	font-size: 20px;
+	font-weight: bold;
+}
+#logo_text{
+	font-family: helvetica;
+	font-size: 40px;
+	font-weight: bold;
+	color: white;
+	margin-bottom: 15px;
+	padding-left: 20px;
+}
+
+#logo_space{
+	border-style: none none solid none;
+	border-width: 2px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+}
+
+.font{
+	font-family: helvetica;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+.sublist_font{
+	font-family: helvetica;
+	font-size: 15px; 
+}
+
+.list_font{
+	font-family: helvetica;
+	font-size: 15px;
+	font-weight: bold;
+}
+
+
+.navbar{
+	display: flex;
+	flex: nowrap;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  font-family: helvetica;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+.account_action{
+	display: flex;
+	flex: wrap;
+	flex-direction: row;
+	justify-content: space-evenly;
+	padding: 20px;
+}
+
+.account_action input[type=button]{
+	font-family: helvetica;
+	font-size: 11px;
+	border: none;
+	border-radius: 5px;
+	height: 40px;
+	width: 200px;
+}
+
+.account_action input[type=button]:hover{
+	background-color: rgb(214, 118, 31);
+}
+.account_action input[type=button]:active{
+	background-color:  rgb(210, 178, 122);
+}

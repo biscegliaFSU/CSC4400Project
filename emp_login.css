@@ -1,0 +1,86 @@
+body{
+	margin: 0px;
+	background-color: rgb(255,127,0);
+}
+
+#form_body{
+	display: block;
+	margin: auto;
+	text-align: center;
+	background-color: rgb(255,127,0);
+	margin-bottom: 10%;
+}
+
+#login{
+	display: inline-block;
+	text-align: left;
+	background-color: rgb(240, 178, 122);
+	border-style: none solid none none;
+	border-width: 20px;
+	border-radius: 5px;
+	padding: 30px;
+	width: 300px;
+}
+
+#login-title{
+	font-family: helvetica;
+	font-weight: bold;
+	font-size: 20px;
+	
+}
+
+.login-subtext{
+	font-family: helvetica;
+	font-size: 9px;
+}
+
+#forgot{
+	font-family: helvetica;
+	font-size: 12px;
+	text-decoration: none;
+}
+
+
+input[type=text]{
+	border: none;
+	border-radius: 6px;
+	height: 4vh;
+	width: 250px;
+	padding-left: 5px;
+}
+
+input[type=password]{
+	border: none;
+	border-radius: 6px;
+	height: 4vh;
+	width: 250px;
+	padding-left: 5px;
+}
+
+input[type=button]{
+	border: none;
+	border-radius: 6px;
+	height: 5vh;
+	width: 250px;
+	background-color: rgb(255,127,0);
+	margin-top: 2px;
+}
+
+input[type=button]:hover{
+	background-color:  rgb(240, 178, 122);
+}
+input[type=button]:active{
+	background-color:  rgb(210, 178, 122);
+}
+
+#title{
+	font-family: helvetica;	
+	font-weight: bold;
+	font-size: 40px;
+	text-align: center;
+	display: block;
+	margin-top: 10%;
+	margin-left: auto;
+	margin-right: auto;
+
+}
