@@ -68,6 +68,7 @@
 	color: white;
 	width: 50%;
 	float: left;
+	font-weight: bold;
 }
 .about-text-box {
 	margin-right: 2%;
@@ -79,14 +80,51 @@
 .about-text-box p {
 	font-size: 17px;
 }
-.embedded-google-map{
-    width: 48%;
-    float: left;
+.embedded-google-map {
+	width: 48%;
+	float: left;
 }
-.embedded-google-map iframe{
-   width: 100%;
-	 border-radius: 25px;
+.embedded-google-map iframe {
+  width: 100%;
+	border-radius: 25px;
 }
-.clearfix{
-    clear:both
+.clearfix {
+  clear:both
+}
+.contact-left-text-box {
+	color: white;
+	width: 48%;
+  float: left;
+}
+.text-field {
+	font-weight: bold;
+}
+.submit-button {
+	text-align: left;
+}
+#name, #phone, #email {
+	width: 80%;
+	font-weight: bold;
+	font-size: 25px;
+	border-color: white;
+	border-radius: 4px;
+}
+#description {
+	height: 260px;
+	width: 100%;
+	font-weight: bold;
+	font-size: 20px;
+}
+input[type=submit] {
+  background-image: linear-gradient(red, orange);
+  color: white;
+	height: 100px;
+	width: 40%;
+	text-align: center;
+	border-color: white;
+	padding: 10px 20px;
+	font-weight: bold;
+  border-radius: 4px;
+	font-size: 200%;
+  cursor: pointer;
 }
