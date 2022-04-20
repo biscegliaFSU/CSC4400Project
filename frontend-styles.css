@@ -128,3 +128,18 @@ input[type=submit] {
 	font-size: 200%;
   cursor: pointer;
 }
+#box { 
+    display: none; 
+}
+#box { 
+    float: left; 
+    width: 200px; 
+    height: 200px; 
+    background: url('/path/to/photo_of_big_unchecked_box.png'); 
+}
+#box:checked { 
+    background: url('/path/to/photo_of_big_checked_box.png'); 
+}
+.cart {
+    background-color: #4f0000;
+}
