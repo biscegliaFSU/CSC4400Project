@@ -1,3 +1,6 @@
+<?php 
+session_start();
+?>
 <!doctype html>
 <html lang="en">
   <head>
@@ -13,8 +16,6 @@
 			<p id="logo_text">Quick-serve</p>
 			<a id="abtme" href="aboutme.php"><img src="person.png"></a>
 		</div>
-
-		
 	</div>
   
 	<div id="container">
