@@ -3,55 +3,12 @@ body{
 	background-color: rgb(214, 118, 31);
 }
 
-#stats_field{
-	display: flex;
-	flex: nowrap;
-	flex-direction: row;
-	justify-content: space-evenly;
-	height: 800px;
-	width: 80%;
-	margin-left: 0px;
-	text-align: center;
-	background-color: rgb(240, 178, 122);
-}
-
-#actions_field{
-	height: 800px;
-	width: 20%;
-	border-style: none none none solid;
-	border-width: 2px;
-	border-color: black;
-	padding-left: 20px;
-}
 
 #container{
 	display: flex;
 	flex: nowrap;
 	flex-direction: column;
 	background-color: rgb(240, 178, 122); 
-}
-
-.btn_container{
-	display: flex;
-	flex: nowrap;
-	flex-direction: column;
-	padding: 20px;
-}
-
-.btn_container input[type=button]{
-	font-family: helvetica;
-	font-size: 11px;
-	border: none;
-	border-radius: 5px;
-	height: 40px;
-	width: 80%;
-}
-
-.btn_container input[type=button]:hover{
-	background-color:  rgb(240, 178, 122);
-}
-.btn_container input[type=button]:active{
-	background-color:  rgb(210, 178, 122);
 }
 
 #subtext{
@@ -82,8 +39,9 @@ body{
 }
 
 .sublist_font{
-	font-family: helvetica;
-	font-size: 15px; 
+    padding-left: 20px;
+    font-family: helvetica;
+    font-size: 15px; 
 }
 
 .list_font{
@@ -94,10 +52,10 @@ body{
 
 
 .navbar{
-	display: flex;
-	flex: nowrap;
-	flex-direction: row;
-	justify-content: space-between;
+    display: flex;
+    flex: nowrap;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 ul {
@@ -131,20 +89,4 @@ li a:hover {
 	flex-direction: row;
 	justify-content: space-evenly;
 	padding: 20px;
-}
-
-.account_action input[type=button]{
-	font-family: helvetica;
-	font-size: 11px;
-	border: none;
-	border-radius: 5px;
-	height: 40px;
-	width: 200px;
-}
-
-.account_action input[type=button]:hover{
-	background-color: rgb(214, 118, 31);
-}
-.account_action input[type=button]:active{
-	background-color:  rgb(210, 178, 122);
 }
