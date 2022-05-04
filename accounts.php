@@ -183,18 +183,38 @@
             die("Connection failed: " . $conn->connect_error);
         }
         //   3. Generate an SQL statement
-        $sql = "INSERT INTO login (LoginID, Username, Password, SecurityQuestion, SecurityAnswer, Access) values ('$id', '$name', '$pass', '$question', '$answer', '$access')";
+        $sql = "INSERT INTO login (LoginID, Username, Password, SecurityQuestion, SecurityAnswer, Access, TermAcc) values ('$id', '$name', '$pass', '$question', '$answer', '$access', 0)";
         $result = $conn->query($sql);
     }
     
     function terminate_account()
     {
+        $idErr;
         //fill me
-        echo '<p class="sublist_font">Name: ' . $result_arr[1][0] . '    Pass: ' . $result_arr[1][1] . '</p>';
+        
         //add a new variable in the SQL database that indicates whether an account is active or not
         //this can be a simple 0 or 1
         //once an account has been terminated, change the active SQL column to a 1
         //prompt page for a refresh in order to update info.
+        if (empty($_POST["id"])) {
+            $idErr = "Id is required";
+        } else {
+            $id = test_input($_POST["id"]);
+            
+            $servername = "localhost";
+            $username = "root";
+            $password = "";
+            $dbname = "test";
+            // Create connection
+            $conn = new mysqli($servername, $username, $password, $dbname);
+
+            // Check connection
+            if ($conn->connect_error) {
+                die("Connection failed: " . $conn->connect_error);
+            }
+            //continue
+            
+        }  
     }
     
 ?>
@@ -227,7 +247,7 @@
                               die("Connection failed: " . $conn->connect_error);
                             }
                             //   3. Generate an SQL statement
-                            $sql = "SELECT Username, Password FROM login";
+                            $sql = "SELECT Username, Password, TermAcc FROM login";
                             $result = $conn->query($sql);
                             $num_rows = mysqli_num_rows($result);
                             
@@ -239,9 +259,11 @@
                                 //echo $length;
                                 for($i = 0; $i < $length; $i++)
                                 {
-                                    //echo '<p class="sublist-font">' . $key . '</p>';
-                                    echo 
-                                    '<p class="sublist_font">Name: ' . $result_arr[$i][0] . '    Pass: ' . $result_arr[$i][1] . '</p>';
+                                    if($result_arr[$i][2] == 0)
+                                    {
+                                        echo 
+                                        '<p class="sublist_font">Name: ' . $result_arr[$i][0] . '    Pass: ' . $result_arr[$i][1] . '</p>';
+                                    }
                                 }
                             }
                             //shut down connection
@@ -250,7 +272,16 @@
 		</div>
 		<div>
 			<p class="list_font">Terminated accounts:</p>
-			<p class="sublist_font">None</p>
+			<?php 
+                             for($i = 0; $i < $length; $i++)
+                                {
+                                    if($result_arr[$i][2] == 1)
+                                    {
+                                        echo 
+                                        '<p class="sublist_font">Name: ' . $result_arr[$i][0] . '    Pass: ' . $result_arr[$i][1] . '</p>';
+                                    }
+                                }
+                        ?>
 		</div>
 	</div>
         <div id="actions_field">
@@ -323,8 +354,8 @@
                 <!--Modal body content-->
                  <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>">
                    
-                   Employee ID:<br><input type="text" name="uname">
-                   <span class="error">* <?php echo $nameErr;?></span>  
+                   Employee ID:<br><input type="text" name="id">
+                   <span class="error">* <?php echo $idErr;?></span>  
                    <br><br>
                    <input type="submit" value="T E R M I N A T E" class="modal_buttons" id="del_acnt" name="del_acnt">
                 </form>
