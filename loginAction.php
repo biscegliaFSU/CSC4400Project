@@ -21,7 +21,7 @@ if ($conn->connect_error) {
 }
 
 //   3. Generate an SQL statement
-$sql = "SELECT Username, Password, Access FROM login WHERE Username='$form_user' AND Password='$form_pass'";
+$sql = "SELECT Username, Password, Access, TermAcc FROM login WHERE Username='$form_user' AND Password='$form_pass'";
 $result = $conn->query($sql);
 $num_rows = mysqli_num_rows($result);
 
@@ -38,7 +38,12 @@ if ($result !== false) {
     //Snagging database info based on passed in parameters
     $access_result = mysqli_query($conn, $sql);
     $result_arr = mysqli_fetch_all($access_result, MYSQLI_NUM);
-
+    if($result_arr[0][3] == 1)
+    {
+        echo 'this account is terminated.';
+        header("refresh: 3; url=back_end_home.php");
+        exit();
+    }
     //If admin flag is raised, allow for admin entry    
     if($result_arr[0][2] == 1)
         {
