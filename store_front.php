@@ -31,8 +31,8 @@
 	  <div onclick="location.href='about.html';">❰ About ❱</div>
     <div onclick="location.href='contact.html';">❰ Contact ❱</div>
     <div onclick="location.href='index.html';">❰ Home ❱</div>
-    <div onclick="location.href='index.html';">❰ Language ❱</div>
-    <div style="background-color:#4f0000"><input type="button" name="btnsubmit" value="Checkout 🛒" class="cart" onclick="myFunction()"></div>
+    <div onclick="location.href='store_front.php';" style="background-color:red">❱ Menu ❰</div>
+    <div style="background-color:#4f0000"><input style="color:black;" type="button" name="btnsubmit" value="Checkout 🛒" class="cart" onclick="myFunction()"></div>
   </div>
   </head>
   <body class="container my-5">

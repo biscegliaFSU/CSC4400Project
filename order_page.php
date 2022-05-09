@@ -123,22 +123,7 @@
                 array_push($itemRecord, $inputIdNum); 
                 echo <<<_END
                     <div class="layout-inline row">
-
-                        <div class="col col-pro layout-inline">
-                            <img src="$link" alt="Placeholder" />
-                        </div>
-                            
-                        <div class="col col-pro layout-inline">
-                            <p>$name</p>
-                        </div>
-                        
-                        <div class="col col-qty layout-inline">
-                           <input id="I$inputIdNum" type="numeric" onfocusout="total()" class="quantity" style="background-color:white" value="1" />
-                        </div>
-
-                        <div class="col col-price col-numeric align-center ">
-                           <p>$<span id="P$inputIdNum">$price</span></p>
-                        </div>
+                        <p>$
                     </div>
 _END;
             }

@@ -140,6 +140,3 @@ input[type=submit] {
 #box:checked { 
     background: url('/path/to/photo_of_big_checked_box.png'); 
 }
-.cart {
-    background-color: #4f0000;
-}
